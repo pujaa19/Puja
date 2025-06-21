@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+int i,n,arr[100];
+int max,min;
+printf("The size of array:");
+scanf("%d",&n);
+
+for(i=0;i<n;i++){
+printf("The element in the array:");
+scanf("%d",&arr[i]);
+}
+
+for(i=0;i<n;i++){
+printf("The element of the array are:%d\n",arr[i]);
+}
+for(i=0;i<n;i++){
+if(arr[i]%2==0){
+printf("Even number:%d\n",arr[i]);
+}
+else{
+printf("Odd number:%d\n",arr[i]);
+}
+}
+return 0;
+}
