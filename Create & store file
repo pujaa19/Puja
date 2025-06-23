@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    FILE*fp;
+    char name[100];
+    fp=fopen("test.txt", "w");
+
+printf("Enter the name:");
+gets(name);
+
+
+if(fp==NULL){
+    printf("Error is opening file");
+}else{
+    printf("File is open!");
+    fprintf(fp ,"%s",name);
+    fclose(fp);
+}
+printf("\n The file %s created successfully...!!\n\n",name);
+
+    return 0;
+    
+}
